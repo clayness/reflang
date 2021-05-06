@@ -17,7 +17,7 @@ public interface Heap {
 	Value free (Value.RefVal value);
 
 	static public class Heap16Bit implements Heap {
-		static final int HEAP_SIZE = 65_536;
+		static final int HEAP_SIZE = 10;
 		
 		Value[] _rep = new Value[HEAP_SIZE];
 		int index = 0;
